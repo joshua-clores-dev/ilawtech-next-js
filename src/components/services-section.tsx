@@ -95,7 +95,7 @@ export function ServicesSection() {
               <CardContent>
                 <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
                 <Button variant="ghost" className="mt-4 p-0 h-auto text-accent hover:text-accent/80">
-                  Learn More →
+                  Add to Quote →
                 </Button>
               </CardContent>
             </Card>
