@@ -1,12 +1,24 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const services = [
   {
     title: "Systems Integration & Network Setup",
-    description: "Seamlessly connect your technology infrastructure for optimal performance and reliability.",
+    description:
+      "Seamlessly connect your technology infrastructure for optimal performance and reliability.",
     icon: (
-      <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg
+        className="h-8 w-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -18,9 +30,15 @@ const services = [
   },
   {
     title: "Cloud Infrastructure & Server Management",
-    description: "Scalable cloud solutions and expert server management to keep your business running smoothly.",
+    description:
+      "Scalable cloud solutions and expert server management to keep your business running smoothly.",
     icon: (
-      <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg
+        className="h-8 w-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -32,18 +50,35 @@ const services = [
   },
   {
     title: "Custom Software Development",
-    description: "Tailored software solutions designed specifically for your business needs and workflows.",
+    description:
+      "Tailored software solutions designed specifically for your business needs and workflows.",
     icon: (
-      <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+      <svg
+        className="h-8 w-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+        />
       </svg>
     ),
   },
   {
     title: "Cybersecurity & Compliance Support",
-    description: "Comprehensive security measures and compliance assistance to protect your digital assets.",
+    description:
+      "Comprehensive security measures and compliance assistance to protect your digital assets.",
     icon: (
-      <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg
+        className="h-8 w-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -55,27 +90,40 @@ const services = [
   },
   {
     title: "IT Consultancy & Technical Maintenance",
-    description: "Expert guidance and ongoing maintenance to optimize your technology investments.",
+    description:
+      "Expert guidance and ongoing maintenance to optimize your technology investments.",
     icon: (
-      <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg
+        className="h-8 w-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
           d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
         />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+        />
       </svg>
     ),
   },
-]
+];
 
 export function ServicesSection() {
   return (
     <section id="services" className="py-20 bg-muted/30">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our Services</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+            Our Services
+          </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Comprehensive IT solutions tailored to your business needs
           </p>
@@ -83,7 +131,10 @@ export function ServicesSection() {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card
+              key={index}
+              className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+            >
               <CardHeader>
                 <div className="flex items-center space-x-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
@@ -93,8 +144,13 @@ export function ServicesSection() {
                 </div>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
-                <Button variant="ghost" className="mt-4 p-0 h-auto text-accent hover:text-accent/80">
+                <CardDescription className="text-base leading-relaxed">
+                  {service.description}
+                </CardDescription>
+                <Button
+                  variant="ghost"
+                  className="mt-4 p-0 h-auto text-accent hover:text-accent/80"
+                >
                   Add to Quote →
                 </Button>
               </CardContent>
@@ -103,5 +159,5 @@ export function ServicesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
