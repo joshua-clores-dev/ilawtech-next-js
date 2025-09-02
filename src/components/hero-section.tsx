@@ -25,13 +25,12 @@ export function HeroSection() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              variant="outline"
-              size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg"
+            <a
+              href="#contact"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg rounded-md border border-input shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 inline-flex items-center justify-center font-medium"
             >
               Contact Us
-            </Button>
+            </a>
           </div>
         </div>
       </div>

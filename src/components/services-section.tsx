@@ -149,7 +149,7 @@ export function ServicesSection() {
                 </CardDescription>
                 <Button
                   variant="ghost"
-                  className="mt-4 p-0 h-auto text-accent hover:text-accent/80"
+                  className="mt-4 p-1.5 h-auto text-accent hover:text-white"
                 >
                   Add to Quote →
                 </Button>
