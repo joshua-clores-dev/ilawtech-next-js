@@ -26,13 +26,6 @@ export function Header() {
               {link.label}
             </a>
           ))}
-          <Button
-            variant="default"
-            size="sm"
-            className="bg-accent hover:bg-accent/90"
-          >
-            Get Started
-          </Button>
         </nav>
 
         {/* Mobile menu button */}

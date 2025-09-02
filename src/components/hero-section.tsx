@@ -26,15 +26,9 @@ export function HeroSection() {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg"
-            >
-              Get Started
-            </Button>
-            <Button
               variant="outline"
               size="lg"
-              className="px-8 py-3 text-lg bg-transparent"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg"
             >
               Contact Us
             </Button>
